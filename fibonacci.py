@@ -13,7 +13,7 @@ def calculate_fibonacci(n):
     elif n == 0:
         return 0
     elif n == 1:
-        return 2
+        return 1
     # Recursive step: sum of the two preceding Fibonacci numbers
     else:
         return calculate_fibonacci(n - 1) + calculate_fibonacci(n - 2)
