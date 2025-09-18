@@ -7,5 +7,6 @@ def calculate_fibonacci(n):
     calculate_fibonacci(5) -> 5
     """
     # TODO: Student must write their code here.
+    print("Hello from my fork")
     # For now, let's provide a placeholder that will fail the test.
     return -1
