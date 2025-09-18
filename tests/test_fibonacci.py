@@ -1,4 +1,9 @@
 import unittest
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from fibonacci import calculate_fibonacci
 
 class TestFibonacci(unittest.TestCase):
