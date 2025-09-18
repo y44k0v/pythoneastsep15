@@ -8,4 +8,4 @@ def calculate_fibonacci(n):
     """
     # TODO: Student must write their code here.
     # For now, let's provide a placeholder that will fail the test.
-    return -1
+    return -5
