@@ -8,4 +8,6 @@ def calculate_fibonacci(n):
     """
     # TODO: Student must write their code here.
     # For now, let's provide a placeholder that will fail the test.
-    return -1
+    phi = (1 + 5**0.5) / 2
+    psi = (1 - 5**0.5) / 2
+    return round((phi**n - psi**n) / 5**0.5)
