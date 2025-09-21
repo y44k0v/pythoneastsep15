@@ -10,15 +10,20 @@ def calculate_fibonacci(n):
     # For now, let's provide a placeholder that will fail the test.
 
     """Return the nth Fibonacci number using recursion."""
+    if n < 0:
+        raise ValueError('No negative numbers')
+
     if n <= 0:
         return 0
     elif n == 1:
         return 1
     else:
         return calculate_fibonacci(n-1) + calculate_fibonacci(n-2)
-
+ 
 
 print("Fibonacci(0) =", calculate_fibonacci(0))
 print("Fibonacci(1) =", calculate_fibonacci(1))
 print("Fibonacci(5) =", calculate_fibonacci(5))
  
+
+
