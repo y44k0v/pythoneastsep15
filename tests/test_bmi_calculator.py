@@ -24,34 +24,21 @@ class TestBMICalculator(unittest.TestCase):
 
     def test_edge_case_zero_height(self):
         # Test what happens if height is zero
-        # Depending on student's implementation, this might return None or raise an error
-        # Adjust this test based on what you expect from their 'edge case' handling
-        # Example 1: if they return None for invalid height
+        
         self.assertIsNone(calculate_bmi(70, 0))
-        # Example 2: if they raise a ValueError
-        # with self.assertRaises(ValueError):
-        #     calculate_bmi(70, 0)
+       
 
     def test_edge_case_negative_height(self):
         # Test what happens if height is negative
-        # Adjust this test based on what you expect from their 'edge case' handling
-        # Example 1: if they return None for invalid height
+        
         self.assertIsNone(calculate_bmi(70, -1.75))
-        # Example 2: if they raise a ValueError
-        # with self.assertRaises(ValueError):
-        #     calculate_bmi(70, -1.75)
+        
 
     def test_edge_case_negative_weight(self):
         # Test what happens if weight is negative
-        # The formula will still work mathematically, but a negative weight is
-        # not physically possible, so students might handle this.
-        # For simplicity, we might let the formula run, or expect a specific handling.
-        # If formula is expected:
+        
         self.assertAlmostEqual(calculate_bmi(-70, 1.75), -22.86, places=2)
-        # If specific handling (e.g., returning None or raising error):
-        # self.assertIsNone(calculate_bmi(-70, 1.75))
-        # with self.assertRaises(ValueError):
-        #     calculate_bmi(-70, 1.75)
+        
 
     def test_large_values(self):
         # Test with very large values to ensure no overflow issues (though unlikely for BMI)
