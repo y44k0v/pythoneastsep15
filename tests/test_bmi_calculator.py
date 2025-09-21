@@ -24,20 +24,17 @@ class TestBMICalculator(unittest.TestCase):
 
     def test_edge_case_zero_height(self):
         # Test what happens if height is zero
-        
         self.assertIsNone(calculate_bmi(70, 0))
-       
+
 
     def test_edge_case_negative_height(self):
         # Test what happens if height is negative
-        
         self.assertIsNone(calculate_bmi(70, -1.75))
         
 
     def test_edge_case_negative_weight(self):
         # Test what happens if weight is negative
-        
-        self.assertAlmostEqual(calculate_bmi(-70, 1.75), -22.86, places=2)
+        self.asassertIsNone(calculate_bmi(-70, 1.75))
         
 
     def test_large_values(self):
