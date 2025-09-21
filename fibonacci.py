@@ -12,4 +12,5 @@ def calculate_fibonacci(n):
         raise ValueError("Sorry, numbers below zero are not allowed.")
     phi = (1 + 5**0.5) / 2
     psi = (1 - 5**0.5) / 2
+    
     return round((phi**n - psi**n) / 5**0.5) 
