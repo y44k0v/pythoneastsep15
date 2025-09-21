@@ -6,9 +6,9 @@ def calculate_fibonacci(n):
     calculate_fibonacci(1) -> 1
     calculate_fibonacci(5) -> 5
     """
-    # TODO: Student must write their code here.
-    # For now, let's provide a placeholder that will fail the test.
-
+    # Don't use recursion
+    
+    # Single lines are not triple quoted
     """Return the nth Fibonacci number using recursion."""
     if n < 0:
         raise ValueError('No negative numbers')
