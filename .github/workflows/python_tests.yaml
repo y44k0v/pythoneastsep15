@@ -16,6 +16,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.13"
-        
-    - name: Run unit tests
+
+    - name: Run unit tests fibonacci
       run: python -m unittest ./tests/test_fibonacci.py -v
