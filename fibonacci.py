@@ -6,7 +6,7 @@ def calculate_fibonacci(n):
     calculate_fibonacci(1) -> 1
     calculate_fibonacci(5) -> 5
     """
-    # TODO: Student must write their code here.
+    # TODO: Student must write their code here...
     if n < 0:
         raise ValueError("Sorry, numbers below zero are not allowed.")
     phi = (1 + 5**0.5) / 2
