@@ -34,7 +34,7 @@ class TestBMICalculator(unittest.TestCase):
 
     def test_edge_case_negative_weight(self):
         # Test what happens if weight is negative
-        self.asassertIsNone(calculate_bmi(-70, 1.75))
+        self.assertIsNone(calculate_bmi(-70, 1.75))
         
 
     def test_large_values(self):
