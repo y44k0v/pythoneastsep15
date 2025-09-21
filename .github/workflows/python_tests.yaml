@@ -21,4 +21,4 @@ jobs:
       run: python -m unittest ./tests/test_fibonacci.py -v
       
     - name: Run unit tests bmi
-      run: pyhon -m unittest ./tests/test_bmi_calculator.py -v
+      run: python -m unittest ./tests/test_bmi_calculator.py -v
