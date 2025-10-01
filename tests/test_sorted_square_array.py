@@ -1,4 +1,9 @@
 import unittest
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from sorted_square_array import sortedSquaredArray
 
 class TestSortedSquaredArray(unittest.TestCase):
