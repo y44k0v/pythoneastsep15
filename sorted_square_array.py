@@ -16,7 +16,19 @@ Expected Output: [0, 1, 1, 4, 4]
 
 def sortedSquaredArray(array):
     # Write your code here.
-    pass
+    squares = []
+	leftIndex = 0
+	rightIndex = len(array) - 1
+	while leftIndex <= rightIndex:
+		leftValue = abs(array[leftIndex])
+		rightValue = abs(array[rightIndex])
+		if leftValue > rightValue:
+			squares.append(leftValue ** 2)
+			leftIndex += 1
+		else:
+			squares.append(rightValue ** 2)
+			rightIndex -= 1
+	return list(reversed(squares))
 
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)
