@@ -18,6 +18,7 @@ You can complete any exercise you want, but to submit a pull request you have to
 2. bmi_calculator.py
 3. test_two_number_sum.py
 4. sorted_square_array.py
+5. validate_subsequence.py
 
 To get the new exercises: `sync fork`  button on GitHub or `git pull` in your CLI. Use Slack for your questions, and paste screenshots in case of errors in the `#practice` channel.
 
@@ -33,6 +34,7 @@ $ python -m unittest ./tests/test_fibonacci.py -v
 $ python -m unittest ./tests/test_bmi_calculator.py -v
 $ python -m unittest ./tests/test_two_number_sum.py -v 
 $ python -m unittest ./tests/test_sorted_square_array.py -v
+$ python -m unittest ./tests/test_validate_subsequence.py -v
 ```
 
 If all tests pass you can continue with Part 4.
@@ -41,8 +43,9 @@ If all tests pass you can continue with Part 4.
 Additionally, some tests are written inside the exercise files at the end as print statements. Execute the files directly:
 
 ```BASH
-$ python two_number_sum.py -v 
-$ python sorted_square_array.py -v
+$ python two_number_sum.py 
+$ python sorted_square_array.py 
+$ python validate_subsequence.py
 ```
 
 ---
