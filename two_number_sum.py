@@ -16,7 +16,18 @@ Expected Output: [-1, 11] (the order of the numbers doesn't matter)
 
 def twoNumberSum(array, targetSum):
     # Write your code here.
-    pass
+    # Write your code here.
+	if len(array) < 2:
+		return []
+	store = set()
+	
+	for x in array:
+		if targetSum - x in store:
+			return [x, targetSum - x]
+		else:
+			store.add(x)
+			
+	return []
 
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)
