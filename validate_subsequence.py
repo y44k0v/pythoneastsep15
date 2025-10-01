@@ -24,7 +24,19 @@ Expected Output: False (because -1 comes before 10 in the sequence, but after in
 
 def isValidSubsequence(array, sequence):
     # Write your code here.
-    pass
+    # O(N) time and O(1) space
+    if not sequence:
+        return False
+
+    index = 0
+    for x in array:
+        if x == sequence[index]:
+            if index == len(sequence) - 1:
+                return True
+            index += 1
+
+    return False
+
 
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)

@@ -15,8 +15,21 @@ Expected Output: [0, 1, 1, 4, 4]
 """
 
 def sortedSquaredArray(array):
-    # Write your code here.
-    pass
+	# Write your code here.
+    squares = []
+    leftIndex = 0
+    rightIndex = len(array) - 1
+    while leftIndex <= rightIndex:
+        leftValue = abs(array[leftIndex])
+        rightValue = abs(array[rightIndex])
+        if leftValue > rightValue:
+            squares.append(leftValue ** 2)
+            leftIndex += 1
+        else:
+            squares.append(rightValue ** 2)
+            rightIndex -= 1
+    return list(reversed(squares))
+
 
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)
@@ -25,3 +38,4 @@ if __name__ == '__main__':
     print(f"Test 3: [-5, -4, -3, -2, -1] -> {sortedSquaredArray([-5, -4, -3, -2, -1])}")
     print(f"Test 4: [0, 0, 0] -> {sortedSquaredArray([0, 0, 0])}")
     print(f"Test 5: [7, 8, 9, 10] -> {sortedSquaredArray([7, 8, 9, 10])}")
+
