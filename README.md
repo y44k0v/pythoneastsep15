@@ -16,6 +16,7 @@ You can complete any exercise you want, but to submit a pull request you have to
  
 1. fibonacci.py
 2. bmi_calculator.py
+3. test_two_number_sum.py
 
 To get the new exercises: `sync fork`  button on GitHub or `git pull` in your CLI. Use Slack for your questions, and paste screenshots in case of errors in the `#practice` channel.
 
@@ -29,6 +30,7 @@ After Part 3 below, you can check your code locally before pushing with:
 ```BASH
 $ python -m unittest ./tests/test_fibonacci.py -v
 $ python -m unittest ./tests/test_bmi_calculator.py -v
+$ python -m unittest ./tests/test_two_number_sum.py -v 
 ```
 
 If all tests pass you can continue with Part 4.

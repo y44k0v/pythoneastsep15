@@ -22,3 +22,6 @@ jobs:
       
     - name: Run unit tests bmi
       run: python -m unittest ./tests/test_bmi_calculator.py -v
+    
+    - name: Run unit tests two_number_sum
+      run: python -m unittest ./tests/test_two_number_sum.py -v
