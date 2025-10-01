@@ -28,4 +28,7 @@ jobs:
 
     - name: Run unit tests sorted_square_array
       run: python -m unittest ./tests/test_sorted_square_array.py -v
+    - name: Run unit tests validate_subsequence
+      run: python -m unittest ./tests/test_validate_subsequence.py -v
+    
       
