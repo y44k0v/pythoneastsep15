@@ -37,6 +37,14 @@ $ python -m unittest ./tests/test_sorted_square_array.py -v
 
 If all tests pass you can continue with Part 4.
 
+
+Additionally, some tests are written inside the exercise files at the end as print statements. Execute the files directly:
+
+```BASH
+$ python two_number_sum.py -v 
+$ python sorted_square_array.py -v
+```
+
 ---
 
 Here's a step-by-step guide to fork, clone, edit, and push changes to this GitHub repository, then create a pull request:
