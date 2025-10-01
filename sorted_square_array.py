@@ -15,9 +15,8 @@ Expected Output: [0, 1, 1, 4, 4]
 """
 
 def sortedSquaredArray(array):
-    # Write your code here.
-
-  squares = []
+	# Write your code here.
+    squares = []
 	leftIndex = 0
 	rightIndex = len(array) - 1
 	while leftIndex <= rightIndex:
