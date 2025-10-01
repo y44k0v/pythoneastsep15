@@ -37,6 +37,7 @@ def isValidSubsequence(array, sequence):
 
     return False
 
+
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)
     print(f"Test 1: array=[5, 1, 22, 25, 6, -1, 8, 10], sequence=[1, 6, -1, 10] -> {isValidSubsequence([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10])}")
