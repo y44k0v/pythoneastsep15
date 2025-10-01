@@ -25,3 +25,7 @@ jobs:
     
     - name: Run unit tests two_number_sum
       run: python -m unittest ./tests/test_two_number_sum.py -v
+
+    - name: Run unit tests sorted_square_array
+      run: python -m unittest ./tests/test_sorted_square_array.py -v
+      
