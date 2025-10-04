@@ -16,7 +16,14 @@ Expected Output: [0, 1, 1, 4, 4]
 
 def sortedSquaredArray(array):
     # Write your code here.
-    pass
+    responseArray=[]
+
+    for num in array:
+        responseArray.append(num*num)
+
+    responseArray.sort()
+
+    return responseArray
 
 if __name__ == '__main__':
     # Test cases (you can add more here to test your solution)
