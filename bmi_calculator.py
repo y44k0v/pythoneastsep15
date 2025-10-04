@@ -45,12 +45,29 @@ def calculate_bmi(weight_kg, height_m):
     #     return None # Or raise ValueError("Height cannot be zero or negative.")
     # bmi = weight_kg / (height_m ** 2)
     # return bmi
-    pass # Remove this line when you start implementing
+    
+    if isinstance(weight_kg,(int, float)) ==False:
+        return None
+    
+    if isinstance(height_m,(int, float)) == False:
+        return None 
+    
+    if  weight_kg<0:
+        return None 
+
+    if height_m==0 or height_m<0:
+        return None 
+    
+
+    bmi=weight_kg/(height_m*height_m)
+
+    return round(bmi,2)
+
 
 # --------------------------------------------------------------------------
 # You can add example usage here to test your function manually (optional)
-# if __name__ == "__main__":
-#     print("BMI for 70kg, 1.75m:", calculate_bmi(70, 1.75))
-#     print("BMI for 0kg, 1.75m:", calculate_bmi(0, 1.75))
-#     print("BMI for 70kg, 0m:", calculate_bmi(70, 0))
+if __name__ == "__main__":
+    print("BMI for 70kg, 1.75m:", calculate_bmi(70, 1.75))
+    print("BMI for 0kg, 1.75m:", calculate_bmi(0, 1.75))
+    print("BMI for 70kg, 0m:", calculate_bmi(70, 0))
 # --------------------------------------------------------------------------
